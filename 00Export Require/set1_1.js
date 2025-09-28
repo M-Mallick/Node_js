@@ -5,6 +5,7 @@ let profile = {
     roll : 65,
     age : 22
 };
+
 module.exports = {
     sum,
     profile
