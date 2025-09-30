@@ -1,8 +1,10 @@
 const http = require('node:http');
 const fs = require('node:fs');
+
 function log(req) {
     fs.appendFileSync('log.txt',`[${Date.now()}] --> URL: "${req.url}" & Method: ${req.method}\n`,'utf-8');
 }
+
 const server = http.createServer((req, res) => {
     if(req.method == 'GET') {
         if(req.url == '/') {
@@ -28,7 +30,6 @@ const server = http.createServer((req, res) => {
         log(req);
         return res.writeHead(404).end("ERROR");
     }
-
     // switch (req.url) {
     //     case '/':
     //         return res.writeHead(200).end(`Hello, HM: ${req.method}`);
