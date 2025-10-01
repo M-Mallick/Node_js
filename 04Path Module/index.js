@@ -4,7 +4,6 @@ const fs = require('fs');
 // console.log(__filename); // To get the file path
 // console.log(__dirname);
 
-
 // Folder name (Directory Name)
 // console.log("Folder Name: ",path.dirname(__filename));
 // console.log(path.dirname(__filename) == __dirname);
