@@ -1,5 +1,4 @@
 const http = require('node:http');
-
 const PORT = 8000;
 
 const sever = http.createServer((req, res) => {
