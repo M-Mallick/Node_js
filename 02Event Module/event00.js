@@ -8,3 +8,4 @@ eventEmitter.on('greet', (n) => {
 eventEmitter.emit('greet',900);
 eventEmitter.emit('greet',900);
 eventEmitter.emit('greet',900);
+
